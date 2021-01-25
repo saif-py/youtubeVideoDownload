@@ -16,8 +16,8 @@ try:
 
 
                 def callback(event):
-                    tk.Label(wd, text="getting video info").grid(row=0, column=2, columnspan=2)
                     e = e1.get()
+                    tk.Label(wd, text="getting video info").grid(row=0, column=2, columnspan=2)
                     print(e)
                     e1.delete(0, tk.END)
                     video = pafy.new(e)
@@ -54,7 +54,7 @@ try:
 
 
                 wd = tk.Tk()
-                wd.title('Music Player')
+                wd.title('Youtube video downloader')
                 tk.Label(wd, text="link:->").grid(row=0, column=0)
                 e1 = tk.Entry(wd)
                 e1.grid(row=0, column=1)
